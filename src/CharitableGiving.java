@@ -33,13 +33,10 @@ public class CharitableGiving {
 
         String[] res = new String[donates.length];
         for (int i = 0; i < donates.length; i ++) {
-            System.out.println("Current pq: " + pq);
             Pair cur = pq.poll();
-            System.out.println("cur pick: " + cur);
             res[i] = cur.charity;
             cur.num += donates[i];
             pq.offer(cur);
-            System.out.println("New pq: " + pq);
             System.out.println();
         }
         return res;
