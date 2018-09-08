@@ -43,5 +43,9 @@ public class Main {
         String expression = "10.4*32.7/-12";
         System.out.println(reverseExpression.solution(expression));
 
+        FootballWorldCup footballWorldCup = new FootballWorldCup();
+        int[] goals = {1,2,2,3};
+        System.out.println(footballWorldCup.solution(goals));
+
     }
 }
